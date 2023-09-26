@@ -1,25 +1,111 @@
-header,
-.project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+body {
+  background-color: gray;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+.navTitle {
+  font-weight: 700;
+  font-size: x-large;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+.blog {
+  border: solid;
+  margin-top: 20px;
+  background-color: antiquewhite;
+}
+.blogBox {
+  margin-top: 8px;
+  border-style: solid;
 }
 
-.dollar-amount {
-  color: #056605;
+.blogTitle {
+  color: antiquewhite;
+  font-size: medium;
+  text-align: center;
+}
+
+.blogDesc {
+  border-style: solid;
+  margin-bottom: 5px;
+  padding: 2px;
+  background-color: antiquewhite;
+}
+
+.blogDesc {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.blogCreate {
   font-weight: bold;
-  margin-left: -5px;
+  font-style: italic;
+  font-size: 12px;
+  padding: 5px;
+  color: antiquewhite;
+}
+
+.blogBoxCont {
+  margin-top: 10px;
+  border-style: solid;
+  background-color: antiquewhite;
+}
+
+.formCont {
+  margin-top: 10px;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commentCont {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 75%;
+  background-color: antiquewhite;
+}
+
+.commentOwner {
+  font-size: 14px;
+}
+
+.btnComment {
+  margin-top: 10px;
+}
+
+.commentText {
+  font-weight: bold;
+  padding-top: 10px;
+  background-color: antiquewhite;
+}
+
+.commentCont {
+  border-style: dashed;
+}
+
+.headerRow {
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+a:link {
+  color: rgb(29, 200, 23);
+}
+a:visited {
+  color: rgb(182, 179, 41);
+}
+
+a:hover {
+  color: blue;
+}
+
+.login {
+  margin-left: 25px;
+}
+
+.signup {
+  margin-left: 25px;
+}
+
+.form-group {
+  margin-top: 10px;
 }
