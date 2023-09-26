@@ -21,6 +21,8 @@ N/A
 Please refer to the LICENSE in the repo.
 
 ## Code Sources
+
 https://github.com/btsmith1212/Tech-Blog.git
+
 https://tech-blog1212-66b3dcae834b.herokuapp.com/
 
