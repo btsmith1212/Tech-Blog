@@ -21,7 +21,6 @@ N/A
 Please refer to the LICENSE in the repo.
 
 ## Code Sources
+https://github.com/btsmith1212/Tech-Blog.git
 
-
-## Video Demo
 
