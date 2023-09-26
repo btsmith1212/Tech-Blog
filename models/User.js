@@ -50,5 +50,5 @@ User.init(
     modelName: 'user',
   }
 );
-
+//encrypts user data and saves to table
 module.exports = User;

@@ -20,7 +20,7 @@ const newFormHandler = async (event) => {
     }
   }
 };
-
+// updates dashboard with current posts, gives option to delete current posts
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');

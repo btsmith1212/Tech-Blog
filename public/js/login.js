@@ -18,7 +18,7 @@ const loginFormHandler = async (event) => {
     }
   }
 };
-
+//sends user to dashboard to post upon login
 document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);

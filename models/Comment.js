@@ -42,4 +42,5 @@ Comment.init(
     modelName: 'comment',
   }
 );
+//comment model, tied to user id AND specific blog(post)
 module.exports = Comment;

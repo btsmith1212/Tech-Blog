@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+//create new post
 router.delete('/:id', async (req, res) => {
   try {
     const blogData = await Blog.destroy({
@@ -33,5 +33,5 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+// delete user created post
 module.exports = router;

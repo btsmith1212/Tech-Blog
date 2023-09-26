@@ -18,5 +18,5 @@ Blog.hasMany(Comment, {
 Comment.belongsTo(User, {
   foreignKey: 'user_id',
 });
-
+//master model
 module.exports = { User, Blog, Comment };

@@ -10,12 +10,12 @@
 
     <form class='form new-blog-form' id='new-blog-form'>
       <div class='form-group box-sizing'>
-        <label for='blog-blog-name'>Blog Title:</label>
+        <label for='blog-blog_title'>Post Title:</label>
         <input
           class='form-input'
           type='text'
-          id='blog-blog-name'
-          blog-name='blog-blog-name'
+          id='blog-blog_title'
+          blog-name='blog-blog_title'
         />
       </div>
 
@@ -35,12 +35,12 @@
 
   {{#if blogs.length}}
     <div class='col-md-6 blog-list'>
-      <h3>Current Blogs:</h3>
+      <h3>Current Posts:</h3>
 
       {{#each blogs as |blog|}}
         <div class='row mb-2'>
           <div class='col-md-8'>
-            <h4><a href='/blog/{{blog.id}}'>{{blog.blog-name}}</a></h4>
+            <h4><a href='/blog/{{blog.id}}'>{{blog.blog_title}}</a></h4>
           </div>
           <div class='col-md-4'>
             <button class='btn btn-danger' data-id='{{blog.id}}'>DELETE</button>

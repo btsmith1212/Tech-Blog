@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+//creates new user data
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({
@@ -28,7 +28,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect username or password, please try again' });
       return;
     }
-
+// sends data for login
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -61,7 +61,7 @@ router.post('/signup', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
+//sends data for signup
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
@@ -71,5 +71,5 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
-
+//ends session if signed in
 module.exports = router;

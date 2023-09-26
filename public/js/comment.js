@@ -19,6 +19,7 @@ const commentFormHandler = async function (event) {
     document.location.reload();
   }
 };
+//when user clicks to add new comment, it is saved to table in reference to its parent post
 document
   .querySelector('.new-comment-form')
   .addEventListener('submit', commentFormHandler);

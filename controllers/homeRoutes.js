@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//gets all posts and renders to homepage
 router.get('/blog/:id', async (req, res) => {
   try {
     const blogData = await Blog.findByPk(req.params.id, {
@@ -67,7 +67,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//ties user to their individual dashboard
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/dashboard');
@@ -76,7 +76,7 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
-
+//if user is logged in, sends to dashboard to make new post
 router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/dashboard');
@@ -85,5 +85,6 @@ router.get('/signup', (req, res) => {
 
   res.render('signup');
 });
+//if user is already signed up, sends to dashboard to make new post
 
 module.exports = router;

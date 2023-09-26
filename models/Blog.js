@@ -39,5 +39,5 @@ Blog.init(
     modelName: 'blog',
   }
 );
-
+//blog(post) model, tied to user id 
 module.exports = Blog;

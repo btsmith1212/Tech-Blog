@@ -18,7 +18,7 @@ const signupFormHandler = async (event) => {
     }
   }
 };
-
+//signs user up (need to add functionality to also log user in, currently have to do it manually)
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
