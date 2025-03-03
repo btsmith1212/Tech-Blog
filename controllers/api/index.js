@@ -3,7 +3,7 @@ const userRoutes = require('./userRoutes');
 const blogRoutes = require('./blogRoutes');
 const commentRoutes = require('./commentRoute');
 
-router.use('/users', userRoutes);
+router.use('/user', userRoutes);
 router.use('/blogs', blogRoutes);
 router.use('/comments', commentRoutes);
 //switchboard for all routes
